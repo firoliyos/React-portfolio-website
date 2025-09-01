@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, User,Monitor, Server, Database, Layers } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -12,11 +12,11 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Passionate Web Developer
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
+              I specialize
               in creating responsive, accessible, and performant web
               applications using modern technologies.
             </p>
@@ -47,10 +47,10 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Monitor  className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg"> Frontend Development</h4>
                   <p className="text-muted-foreground">
                     Creating responsive websites and web applications with
                     modern frameworks.
@@ -61,13 +61,13 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Server  className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">Backend Development</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                     Building robust and scalable server-side applications using Node.js, 
+                     Express.js, and NestJS, with efficient database integration for seamless data management.
                   </p>
                 </div>
               </div>
@@ -75,14 +75,28 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Database  className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">Database Management</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                      Designing and managing efficient data solutions with both SQL and NoSQL 
+                      databases, ensuring security, scalability, and smooth integration with applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+             <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Layers  className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                  <p className="text-muted-foreground">
+                       Combining modern frontend frameworks with powerful backend technologies 
+                       and databases to deliver complete, scalable, and user-focused web applications from start to finish.
                   </p>
                 </div>
               </div>
