@@ -51,7 +51,7 @@ const TypewriterSkills = () => {
 const skills = [
   "Software Engineer",
 	"Frontend developer",
-	"Full-stack developer",
+	"Full-Stack developer",
 ];
 
 const AnimatedSkills = () => {
@@ -108,7 +108,7 @@ export const HeroSection = () => {
 										<TypewriterSkills />
 													<div className="mt-6 md:mt-8 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed bg-background/80 rounded-xl shadow p-4 font-sans">
 														<p className="font-medium tracking-wide text-foreground/90 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-															I build websites that feel natural to use, the kind that make sense without needing instructions. I enjoy the process of shaping ideas into something real, something people can interact with and enjoy. It’s not just about writing code for me, it’s about creating experiences that connect, that work, and that leave a good impression.
+															I build websites that feel easy to use — the kind that just make sense. I focus on the details that shape smooth interactions and responsive layouts. It’s about creating digital experiences people enjoy using — ones that work seamlessly and leave a lasting impression.
 														</p>
 														<p className="mt-3 font-medium text-foreground/80 opacity-0 animate-fade-in" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
 															I’m constantly growing, picking up new skills, and finding better ways to build. What drives me most is the joy of turning a simple idea into something real, something people can actually use, connect with, and enjoy.
