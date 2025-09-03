@@ -1,3 +1,4 @@
+import { HeroSection } from "../components/HeroSection"
 import { Navbar } from "../components/Navbar"
 import { StarBackground } from "../components/StarBackground"
 import { ThemeToggle } from "../components/ThemeToggle"
@@ -15,6 +16,14 @@ export const Home = () => {
     <Navbar />
 
     {/* Main Content */}
+    <main>
+      {/* Hero Section */}
+       <HeroSection />
+      {/* About Section */}
+      {/* Skills Section */}
+      {/* Projects Section */}
+      {/* Contact Section */}
+    </main>
 
     {/* Footer */}
   </div>
