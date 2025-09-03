@@ -42,7 +42,7 @@ export const StarBackground = () => {
   };
 
   const generateMeteors = () => {
-    const numberOfMeteors = 4;
+    const numberOfMeteors = 24;
     const newMeteors = [];
 
     for (let i = 0; i < numberOfMeteors; i++) {
