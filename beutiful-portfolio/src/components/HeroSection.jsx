@@ -10,11 +10,11 @@ const TypewriterSkills = () => {
 
 	useEffect(() => {
 		let timeout;
-		// Initial delay before starting animation
+		// Initial delay after intro animation (3.5s)
 		if (displayed === "" && typing && skillIndex === 0) {
 			timeout = setTimeout(() => {
 				setDisplayed(skills[skillIndex].slice(0, 1));
-			}, 1200); // 1.2s delay after website loads
+			}, 3500); // Wait for intro animation to finish
 		} else if (typing) {
 			if (displayed.length < skills[skillIndex].length) {
 				timeout = setTimeout(() => {
@@ -32,7 +32,7 @@ const TypewriterSkills = () => {
 				timeout = setTimeout(() => {
 					setSkillIndex((prev) => (prev + 1) % skills.length);
 					setTyping(true);
-				}, 700);
+				}, 300);
 			}
 		}
 		return () => clearTimeout(timeout);
