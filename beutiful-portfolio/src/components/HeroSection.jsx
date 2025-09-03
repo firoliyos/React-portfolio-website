@@ -10,24 +10,29 @@ const TypewriterSkills = () => {
 
 	useEffect(() => {
 		let timeout;
-		if (typing) {
+		// Initial delay before starting animation
+		if (displayed === "" && typing && skillIndex === 0) {
+			timeout = setTimeout(() => {
+				setDisplayed(skills[skillIndex].slice(0, 1));
+			}, 1200); // 1.2s delay after website loads
+		} else if (typing) {
 			if (displayed.length < skills[skillIndex].length) {
 				timeout = setTimeout(() => {
 					setDisplayed(skills[skillIndex].slice(0, displayed.length + 1));
-				}, 200); // slower typing
+				}, 200);
 			} else {
-				timeout = setTimeout(() => setTyping(false), 1800); // longer pause after typing
+				timeout = setTimeout(() => setTyping(false), 1800);
 			}
 		} else {
 			if (displayed.length > 0) {
 				timeout = setTimeout(() => {
 					setDisplayed(skills[skillIndex].slice(0, displayed.length - 1));
-				}, 100); // slower deleting
+				}, 100);
 			} else {
 				timeout = setTimeout(() => {
 					setSkillIndex((prev) => (prev + 1) % skills.length);
 					setTyping(true);
-				}, 700); // longer pause before next skill
+				}, 700);
 			}
 		}
 		return () => clearTimeout(timeout);
@@ -100,8 +105,19 @@ export const HeroSection = () => {
 									Tesfaye
 								</span>
 							</h1>
-							<TypewriterSkills />
-							<div className="pt-4 opacity-0 animate-fade-in-delay-4">
+										<TypewriterSkills />
+													<div className="mt-6 md:mt-8 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed bg-background/80 rounded-xl shadow p-4 font-sans">
+														<p className="font-medium tracking-wide text-foreground/90 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
+															I build websites that feel natural to use, the kind that make sense without needing instructions. I enjoy the process of shaping ideas into something real, something people can interact with and enjoy. It’s not just about writing code for me, it’s about creating experiences that connect, that work, and that leave a good impression.
+														</p>
+														<p className="mt-3 font-medium text-foreground/80 opacity-0 animate-fade-in" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
+															I’m constantly growing, picking up new skills, and finding better ways to build. What drives me most is the joy of turning a simple idea into something real, something people can actually use, connect with, and enjoy.
+														</p>
+														<p className="mt-3 font-bold text-xl text-primary tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '2.5s', animationFillMode: 'forwards' }}>
+															Thanks for taking the time to check out my work. I’m glad you’re here.
+														</p>
+													</div>
+							<div className="pt-4 opacity-0 animate-fade-in-delay-4 flex justify-center">
 								<a href="#projects" className="cosmic-button">
 									View My Work
 								</a>
