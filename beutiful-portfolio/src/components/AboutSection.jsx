@@ -78,6 +78,7 @@ export const AboutSection = () => {
           whileTap={{ scale: 0.95 }}
           className={`flex flex-col items-center justify-center rounded-2xl shadow-lg p-6 cursor-pointer transition-all duration-300 ${bg}`}
         >
+          
           {/* Animated Icon */}
           <motion.div
             animate={{
