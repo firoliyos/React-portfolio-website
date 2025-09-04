@@ -1,6 +1,7 @@
 // AnimatedIcon.jsx
 import { motion } from "framer-motion";
 
+
 export default function AnimatedIcon({ Icon, color = "text-blue-500" }) {
   return (
     <motion.div
