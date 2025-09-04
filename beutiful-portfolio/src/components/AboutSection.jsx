@@ -29,17 +29,30 @@ export const AboutSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            Passionate Web Developer
+            Creative Web Developer
           </motion.h3>
 
-          <motion.p
-            className="text-muted-foreground"
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2 }}
+            className="bg-background/80 border border-primary/20 rounded-xl shadow-lg p-6 mb-2"
           >
-            I am currently pursuing a degree in Software Engineering, driven by a strong passion for building innovative and impactful digital solutions. My academic journey has equipped me with a solid foundation in programming, problem-solving, and modern software development practices, while my personal projects and continuous learning allow me to explore new frameworks and technologies. With a deep interest in creating efficient, user-friendly applications, I am committed to growing as a developer and contributing to projects that make a real difference.
-          </motion.p>
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+              I am a passionate Fullstack Developer who believes that technology is more than just code—it’s a way to create meaningful impact. My academic journey has equipped me with a strong foundation in programming, problem-solving, and modern software development practices, while my personal projects and continuous learning drive me to explore new frameworks and technologies, constantly pushing the boundaries of what I can create.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.8 }}
+            className="bg-background/80 border border-primary/20 rounded-xl shadow-lg p-6"
+          >
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+              I specialize in building end-to-end web solutions, combining modern frontend frameworks like React.js and Next.js with robust backend technologies such as Node.js, Express.js, and databases. I enjoy transforming complex ideas into intuitive, responsive, and scalable applications that make a real difference for users.
+            </p>
+          </motion.div>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
             <motion.a
