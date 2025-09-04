@@ -57,30 +57,27 @@ export const SkillsSection = () => {
 
         {/* Category buttons with animated underline */}
         <div className="flex flex-wrap justify-center gap-4 mb-12 relative">
-          {categories.map((category, key) => {
-            const isActive = activeCategory === category;
-            return (
-              <motion.button
-                key={key}
-                onClick={() => setActiveCategory(category)}
-                className={cn(
-                  "px-5 py-2 rounded-full capitalize relative overflow-hidden transition-colors duration-300",
-                  isActive
-                    ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
-                )}
-                whileHover={{ scale: 1.1 }}
-              >
-                {category}
-                {isActive && (
-                  <motion.span
-                    layoutId="underline"
-                    className="absolute left-0 bottom-0 h-1 bg-primary rounded-full w-full"
-                  />
-                )}
-              </motion.button>
-            );
-          })}
+          {categories.map((category, key) => (
+            <motion.button
+              key={key}
+              onClick={() => setActiveCategory(category)}
+              className={cn(
+                "px-5 py-2 rounded-full capitalize relative overflow-hidden transition-colors duration-300 cursor-pointer",
+                activeCategory === category
+                  ? "text-primary font-semibold"
+                  : "text-foreground hover:text-primary"
+              )}
+              whileHover={{ scale: 1.1 }}
+            >
+              {category}
+              {activeCategory === category && (
+                <motion.span
+                  layoutId="underline"
+                  className="absolute left-0 bottom-0 h-1 bg-primary rounded-full w-full"
+                />
+              )}
+            </motion.button>
+          ))}
         </div>
 
         {/* Skills grid with animated cards */}
