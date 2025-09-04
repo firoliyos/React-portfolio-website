@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
   SiHtml5,
-  SiCss3,
   SiJavascript,
   SiReact,
   SiNextdotjs,
