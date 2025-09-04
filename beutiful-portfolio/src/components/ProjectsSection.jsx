@@ -3,32 +3,42 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Fiflix Movie website",
+    description: "Developed a Netflix-inspired web app with React.js, offering a responsive and mobile-friendly interface. It dynamically fetches movie data using Axios, providing a smooth, Netflix-like browsing experience with a clean and modern design.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TailwindCSS", "Firebase"],
+    demoUrl: "https://firoliyos.github.io/Firflix-movie-app/",
+    githubUrl: "https://github.com/firoliyos/Firflix-movie-app",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Expense Tracker with AI",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Designed an AI-powered Expense Tracker app with Next.js, Tailwind CSS, Clerk, and Neon. It delivers a smooth, responsive experience with secure authentication and intelligent features like automated expense classification, spending predictions, analytics dashboard and personalized financial insights.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Next.js","TypeScript", "Clerk","Neon", "AI" ],
+    demoUrl: "https://expense-f-tracker-ai.vercel.app/",
+    githubUrl: "https://github.com/firoliyos/Expense-Tracker-AI",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "AI-Powered Sleep Tracker",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Designed and deployed an AI-powered Sleep Tracker using Next.js 15, Tailwind CSS, Prisma, and Clerk. The app intelligently monitors sleep patterns, provides actionable insights, and delivers a seamless, user-friendly experience across devices.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Next.js","TypeScript", "Clerk","Prisma", "AI" ],
+    demoUrl: "https://next-js-sleep-tracker-ai.vercel.app/",
+    githubUrl: "https://github.com/firoliyos/Next-js-Sleep-Tracker-AI",
+  },
+  {
+    id: 4,
+    title: "Let's Talk - Video Conferencing App",
+    description:
+      "Designed and implemented Let’s Talk, a Zoom-inspired video conferencing app built with Next.js 15, TypeScript, and Clerk. The app delivers real-time video communication through a clean, intuitive, and scalable interface, featuring meeting scheduling, upcoming and previous meetings, session recording, real-time chat with emojis, and the ability to invite friends via shareable links, ensuring a seamless and collaborative user experience.",
+    image: "/projects/project4.png",
+    tags: ["Next.js","TypeScript", "Clerk",],
+    demoUrl: "https://lets-talk-coral.vercel.app/",
+    githubUrl: "https://github.com/firoliyos/lets-talk",
   },
 ];
 
@@ -42,8 +52,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Here are some of my recent projects, carefully crafted for performance, detail, and user experience. Each includes links to a live demo and GitHub repository. I’d love to hear from anyone interested in collaborating on these projects!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,9 +109,9 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/firoliyos"
           >
-            Check My Github <ArrowRight size={16} />
+            My Github <ArrowRight size={16} />
           </a>
         </div>
       </div>
