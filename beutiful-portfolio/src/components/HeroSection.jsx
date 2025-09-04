@@ -110,10 +110,7 @@ export const HeroSection = () => {
 														<p className="font-medium tracking-wide text-foreground/90 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
 															I build websites that feel easy to use — the kind that just make sense. I focus on the details that shape smooth interactions and responsive layouts. It’s about creating digital experiences people enjoy using — ones that work seamlessly and leave a lasting impression.
 														</p>
-														<p className="mt-3 font-medium text-foreground/80 opacity-0 animate-fade-in" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
-															I’m constantly growing, picking up new skills, and finding better ways to build. What drives me most is the joy of turning a simple idea into something real, something people can actually use, connect with, and enjoy.
-														</p>
-														<p className="mt-3 font-bold text-xl text-primary tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '2.5s', animationFillMode: 'forwards' }}>
+														<p className="mt-3 font-bold text-xl text-primary tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
 															Thanks for taking the time to check out my work. I’m glad you’re here.
 														</p>
 													</div>
