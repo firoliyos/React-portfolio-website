@@ -111,7 +111,8 @@ export const HeroSection = () => {
 															I build websites that feel easy to use — the kind that just make sense. I focus on the details that shape smooth interactions and responsive layouts. It’s about creating digital experiences people enjoy using — ones that work seamlessly and leave a lasting impression.
 														</p>
 														<p className="mt-3 font-bold text-xl text-primary tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
-															Thanks for taking the time to check out my work. I’m glad you’re here.
+															Thanks for taking the time to check out my work.
+															Feel free to make yourself at home, browse at your own pace, and see what I’ve been building.
 														</p>
 													</div>
 							<div className="pt-4 opacity-0 animate-fade-in-delay-4 flex justify-center">
