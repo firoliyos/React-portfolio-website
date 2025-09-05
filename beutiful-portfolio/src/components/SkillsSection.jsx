@@ -17,6 +17,7 @@ import {
   SiMysql,
   SiGithub,
   SiRedux,
+  SiPostman,
 } from "react-icons/si";
 const skills = [
   { name: "HTML/CSS", level: 95, category: "frontend", icon: <SiHtml5 className="text-orange-500" /> },
@@ -37,6 +38,7 @@ const skills = [
   { name: "MySQL", level: 80, category: "database", icon: <SiMysql className="text-blue-500" /> },
 
   { name: "Git/GitHub", level: 90, category: "tools", icon: <SiGithub /> },
+  { name: "Postman", level: 85, category: "tools", icon: <SiPostman className="text-orange-500" /> },
 ];
 
 const categories = ["all", "frontend", "database", "backend", "tools"];
