@@ -84,20 +84,28 @@ export const ProjectsSection = () => {
                   </p>
                 </div>
                 <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2">
                     <a
                       href={project.demoUrl}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="flex flex-col items-start gap-1 px-2 py-1 rounded-lg bg-gradient-to-r from-green-400 via-blue-300 to-blue-500 text-white shadow hover:scale-105 hover:shadow-lg transition-all duration-300 w-full flex-1 max-w-full text-sm"
                     >
-                      <ExternalLink size={20} />
+                      <div className="flex items-center gap-2">
+                        <ExternalLink size={12} />
+                        <span className="font-medium text-xs">Live Demo</span>
+                      </div>
+                      <span className="text-[10px] text-white/80 italic">(See the project in action)</span>
                     </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="flex flex-col items-start gap-1 px-2 py-1 rounded-lg bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white shadow hover:scale-105 hover:shadow-lg transition-all duration-300 w-full flex-1 max-w-full whitespace-normal text-sm"
                     >
-                      <Github size={20} />
+                      <div className="flex items-center gap-2">
+                        <Github size={12} />
+                        <span className="font-semibold text-xs text-white drop-shadow-sm">GitHub</span>
+                      </div>
+                      <span className="text-[10px] text-white/90 italic">(View the source code)</span>
                     </a>
                   </div>
                 </div>
