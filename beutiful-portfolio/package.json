@@ -1,5 +1,7 @@
 {
-  "name": "beutiful-portfolio",
+  "name": "portfolio",
+  "description": "A modern portfolio website built with React and Vite",
+  "author": "Firaol Tesfaye",
   "private": true,
   "version": "0.0.0",
   "type": "module",

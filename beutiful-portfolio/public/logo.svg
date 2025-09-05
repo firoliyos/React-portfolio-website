@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
+  <!-- Circle background -->
+  <circle cx="75" cy="75" r="70" fill="#0f172a" stroke="#38bdf8" stroke-width="4"></circle>
+  
+  <!-- Bracket styled full name -->
+  <text x="50%" y="55%" text-anchor="middle" font-size="24" font-family="Arial, sans-serif" font-weight="bold" fill="#38bdf8">
+    { FIRAOL }
+  </text>
+  
+  <!-- Code icon -->
+  <text x="50%" y="85%" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" font-weight="bold" fill="#f8fafc">
+     
+  </text>
+</svg>
