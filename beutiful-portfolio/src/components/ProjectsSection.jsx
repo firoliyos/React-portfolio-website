@@ -114,7 +114,7 @@ export const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-12">
             <a
               className="cosmic-button w-fit flex items-center gap-2 px-8 py-3 text-base font-semibold"
@@ -132,7 +132,7 @@ export const ProjectsSection = () => {
                 LinkedIn <ArrowRight size={16} />
               </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
